@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mockupver1/Screens/root.dart';
 import 'package:mockupver1/Screens/signup.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:mockupver1/Screens/welcome/components/background.dart';
 // import 'package:mockupver1/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -24,9 +24,9 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;     // this size provide us total height and width of our screen
 
-    // this size provide us total height and width of our screen
+
 
     return Scaffold(
       resizeToAvoidBottomPadding: false,
@@ -40,9 +40,9 @@ class _BodyState extends State<Body> {
               "Welcome to Lito & HobbyPartner",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            // SvgPicture.asset("assets/icons/chat.svg",
-            //   height: size.height* 0.3
-            // ),
+             /*SvgPicture.asset("assets/icons/chat.svg",
+               height: size.height* 0.3
+             ),*/
             TextFormField(
               controller: emailController,
               decoration: InputDecoration(

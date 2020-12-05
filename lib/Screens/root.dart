@@ -1,5 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:mockupver1/Screens/signup.dart';
+import 'package:mockupver1/Screens/welcome/inicioScreen.dart';
+
 
 
 class RootScreen extends StatefulWidget {
@@ -39,10 +42,27 @@ class _RootScreenState extends State<RootScreen> {
            onPressed: ()=>{
             signOut(),
             Navigator.of(context).pop()
-         })
+         }),
+           SizedBox(height: 60),
+           InkWell(
+             onTap: () => Navigator.push(context,
+                                          MaterialPageRoute(
+                                            builder:(context) => inicioScreen() ,
+                                          )),
+                 child:Container(
+                  width: 150,
+                  height: 30,
+                  child: Text("ir a inicio",
+                 textAlign: TextAlign.center,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+
+             ),
+
+           ),
+           )
        ],)
-       
-    ));
+     ),
+    );
     
   }
 }
