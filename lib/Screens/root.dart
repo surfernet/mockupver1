@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:mockupver1/Screens/signup.dart';
 import 'package:mockupver1/Screens/welcome/inicioScreen.dart';
 
 
@@ -47,7 +46,7 @@ class _RootScreenState extends State<RootScreen> {
            InkWell(
              onTap: () => Navigator.push(context,
                                           MaterialPageRoute(
-                                            builder:(context) => inicioScreen() ,
+                                            builder:(context) => InicioScreen() ,
                                           )),
                  child:Container(
                   width: 150,

@@ -31,7 +31,8 @@ dependencies:
   firebase_auth: ^0.16.0  #^0.14.0+5
   firebase: ^7.3.0
   flutter_svg: ^0.18.0
-
+  cached_network_image: ^2.2.0+1
+  awesome_loader: ^0.0.3
   # flutter_svg: ^0.19.1
 
 dev_dependencies:
